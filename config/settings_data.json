@@ -1,19 +1,19 @@
 {
   "current": {
-    "color_text": "#3a3a3a",
-    "color_body_text": "#333232",
-    "color_sale_text": "#ea0606",
-    "color_button": "#3a3a3a",
+    "color_text": "#ffffff",
+    "color_body_text": "#ffffff",
+    "color_sale_text": "#ffcd66",
+    "color_button": "#30172b",
     "color_button_text": "#ffffff",
-    "color_small_button_text_border": "#3a3a3a",
-    "color_text_field_text": "#000000",
+    "color_small_button_text_border": "#ffcd66",
+    "color_text_field_text": "#ffcd66",
     "color_text_field_border": "#cccccc",
-    "color_text_field": "#ffffff",
+    "color_text_field": "#30172b",
     "color_image_overlay_text": "#ffffff",
-    "color_image_overlay": "#685858",
-    "image_overlay_opacity": 40,
-    "color_borders": "#ebebeb",
-    "color_body_bg": "#ffffff",
+    "color_image_overlay": "#30172b",
+    "image_overlay_opacity": 30,
+    "color_borders": "#ffcd66",
+    "color_body_bg": "#30172b",
     "type_header_font": "helvetica_n7",
     "type_header_base_size": 26,
     "type_base_font": "helvetica_n4",
@@ -64,162 +64,34 @@
           "color_text": "#ffffff"
         }
       },
-      "hero-1": {
-        "type": "hero",
-        "settings": {
-          "image": "",
-          "alignment": "center",
-          "hero_layout": "full_width",
-          "hero_size": "large",
-          "text_size": "large",
-          "title": "Imagem com sobreposição de texto",
-          "text": "<p>Use o texto de sobreposição para apresentar insights sobre sua marca aos clientes. Selecione imagens e textos que reflitam seu estilo e sua história.<\/p>",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
-      "feature-row": {
-        "type": "feature-row",
-        "settings": {
-          "image": "",
-          "layout": "left",
-          "title": "Imagem com texto",
-          "text": "<p>Emparelhe textos grandes com uma imagem para destacar o produto, a coleção ou o post do blog escolhido. Adicione informações sobre disponibilidade, estilo ou até mesmo uma avaliação.<\/p>",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
-      "feature-columns": {
-        "type": "feature-columns",
-        "blocks": {
-          "feature-columns-0": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "",
-              "title": "Adicione um título ou slogan",
-              "text": "<p>Compartilhe posts de blogs, produtos ou promoções com seus clientes. Use este texto para descrever produtos, compartilhar detalhes sobre disponibilidade e estilo ou como um espaço para exibir comentários recentes ou perguntas frequentes.<\/p>",
-              "button_label": "",
-              "button_link": ""
-            }
-          },
-          "feature-columns-1": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "",
-              "title": "Adicione um título ou slogan",
-              "text": "<p>Compartilhe posts de blogs, produtos ou promoções com seus clientes. Use este texto para descrever produtos, compartilhar detalhes sobre disponibilidade e estilo ou como um espaço para exibir comentários recentes ou perguntas frequentes.<\/p>",
-              "button_label": "",
-              "button_link": ""
-            }
-          },
-          "feature-columns-2": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "",
-              "title": "Adicione um título ou slogan",
-              "text": "<p>Compartilhe posts de blogs, produtos ou promoções com seus clientes. Use este texto para descrever produtos, compartilhar detalhes sobre disponibilidade e estilo ou como um espaço para exibir comentários recentes ou perguntas frequentes.<\/p>",
-              "button_label": "",
-              "button_link": ""
-            }
-          }
-        },
-        "block_order": [
-          "feature-columns-0",
-          "feature-columns-1",
-          "feature-columns-2"
-        ],
-        "settings": {
-          "title": "",
-          "align_text": "left"
-        }
-      },
       "collection": {
         "type": "collection",
         "settings": {
-          "title": "Coleção em destaque",
-          "collection": "",
-          "grid": 4,
+          "title": "Find Your Best Style",
+          "collection": "frontpage",
+          "grid": 3,
           "rows": 2,
           "show_vendor": false,
-          "show_view_all": false
+          "show_view_all": true
         }
       },
-      "hero-2": {
-        "type": "hero",
+      "footer": {
+        "type": "footer",
         "settings": {
-          "image": "",
-          "alignment": "center",
-          "hero_layout": "full_width",
-          "hero_size": "medium",
-          "text_size": "large",
-          "title": "Imagem com sobreposição de texto",
-          "text": "<p>Use o texto de sobreposição para apresentar insights sobre sua marca aos clientes. Selecione imagens e textos que reflitam seu estilo e sua história.<\/p>",
-          "button_label": "",
-          "button_link": ""
+          "show_payment_icons": false,
+          "color_footer_bg": "#30172b",
+          "color_footer_text": "#ffffff",
+          "show_locale_selector": true,
+          "show_currency_selector": true
         }
       },
-      "quotes": {
-        "type": "quotes",
-        "blocks": {
-          "quotes-0": {
-            "type": "quote",
-            "settings": {
-              "quote": "<p>Adicione comentários e depoimentos para dar destaque aos clientes satisfeitos com a sua loja.<\/p>",
-              "author": "Nome do autor"
-            }
-          },
-          "quotes-1": {
-            "type": "quote",
-            "settings": {
-              "quote": "<p>Adicione comentários e depoimentos para dar destaque aos clientes satisfeitos com a sua loja.<\/p>",
-              "author": "Nome do autor"
-            }
-          },
-          "quotes-2": {
-            "type": "quote",
-            "settings": {
-              "quote": "<p>Adicione comentários e depoimentos para dar destaque aos clientes satisfeitos com a sua loja.<\/p>",
-              "author": "Nome do autor"
-            }
-          }
-        },
-        "block_order": [
-          "quotes-0",
-          "quotes-1",
-          "quotes-2"
-        ],
-        "settings": {
-          "title": ""
-        }
-      },
-      "image-bar": {
+      "1598453523836": {
         "type": "image-bar",
         "blocks": {
-          "image-bar-0": {
+          "1598453523836-0": {
             "type": "image",
             "settings": {
-              "image": "",
-              "alignment": "center",
-              "link": "",
-              "cta_label": ""
-            }
-          },
-          "image-bar-1": {
-            "type": "image",
-            "settings": {
-              "image": "",
-              "alignment": "center",
-              "link": "",
-              "cta_label": ""
-            }
-          },
-          "image-bar-2": {
-            "type": "image",
-            "settings": {
-              "image": "",
+              "image": "shopify:\/\/shop_images\/pexels-frederik-sorensen-2404959.jpg",
               "alignment": "center",
               "link": "",
               "cta_label": ""
@@ -227,52 +99,146 @@
           }
         },
         "block_order": [
-          "image-bar-0",
-          "image-bar-1",
-          "image-bar-2"
+          "1598453523836-0"
         ],
         "settings": {
           "section_height": "medium"
         }
       },
-      "footer": {
-        "type": "footer",
+      "1598458137210": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Group_8.png",
+          "layout": "left",
+          "title": "DESIGNED FOR FASHION",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1598458560151": {
+        "type": "collection",
+        "settings": {
+          "title": "",
+          "collection": "new-collection",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "1598458704207": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Group_53.png",
+          "layout": "left",
+          "title": "",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1598458792528": {
+        "type": "collection",
+        "settings": {
+          "title": "",
+          "collection": "best-seller",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "1598458967183": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": false,
+          "section_title": "DESIGNED FOR FASHION",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "1598459077230": {
+        "type": "image-bar",
         "blocks": {
-          "footer-0": {
-            "type": "link_list",
+          "1598459077230-0": {
+            "type": "image",
             "settings": {
-              "title": "Links rápidos",
-              "menu": "footer"
-            }
-          },
-          "footer-1": {
-            "type": "newsletter",
-            "settings": {
-              "title": "Newsletter"
+              "image": "shopify:\/\/shop_images\/Group_54.png",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
             }
           }
         },
         "block_order": [
-          "footer-0",
-          "footer-1"
+          "1598459077230-0"
         ],
         "settings": {
-          "show_payment_icons": true,
-          "color_footer_bg": "#f6f6f6",
-          "color_footer_text": "#333232",
-          "show_locale_selector": true,
-          "show_currency_selector": true
+          "section_height": "small"
+        }
+      },
+      "1598459176319": {
+        "type": "collection-list",
+        "blocks": {
+          "1598459176319-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "new-collection"
+            }
+          },
+          "1598459176319-1": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "best-seller"
+            }
+          }
+        },
+        "block_order": [
+          "1598459176319-0",
+          "1598459176319-1"
+        ],
+        "settings": {
+          "title": "",
+          "grid": 3
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "logo": "",
+          "logo_max_width": 100,
+          "header": "Em breve"
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "newsletter_enable": true,
+          "newsletter_form_heading": "Seja o primeiro a saber quando lançarmos.",
+          "newsletter_form_subheading": "<p>Promoções, novos produtos e vendas. Diretamente para sua caixa de entrada.<\/p>",
+          "newsletter_placeholder": "E-mail",
+          "newsletter_button_text": "Notifique-me"
+        }
+      },
+      "password-footer": {
+        "type": "password-footer",
+        "settings": {
+          "show_share_buttons": true,
+          "social_message": "Divulgue a novidade"
         }
       }
     },
     "content_for_index": [
-      "hero-1",
-      "feature-row",
-      "feature-columns",
+      "1598453523836",
       "collection",
-      "hero-2",
-      "quotes",
-      "image-bar"
+      "1598458137210",
+      "1598458560151",
+      "1598458704207",
+      "1598458792528",
+      "1598458967183",
+      "1598459077230",
+      "1598459176319"
     ]
   },
   "presets": {

@@ -1,0 +1,209 @@
+// colors
+//-------------------------------------
+
+$color-light-orange: #FFCD66;
+$color-very-dark-magenta: #30172B;
+$color-white: #fff;
+
+
+    
+// Fonts
+//-------------------------------------
+
+@font-face {
+    font-family: 'Righteous';
+    src: url('{{ "Righteous-Regular.eot" | asset_url }}');
+    src: url('{{ "Righteous-Regular.eot?#iefix" | asset_url }}') format('embedded-opentype'),
+        url('{{ "Righteous-Regular.woff2" | asset_url }}') format('woff2'),
+        url('{{ "Righteous-Regular.woff" | asset_url }}') format('woff'),
+        url('{{ "Righteous-Regular.ttf" | asset_url }}') format('truetype'),
+        url('{{ "Righteous-Regular.svg#Righteous-Regular" | asset_url }}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rhodium Libre';
+    src: url('{{ "RhodiumLibre-Regular.eot" | asset_url }}');
+    src: url('{{ "RhodiumLibre-Regular.eot?#iefix" | asset_url }}') format('embedded-opentype'),
+        url('{{ "RhodiumLibre-Regular.woff2" | asset_url }}') format('woff2'),
+        url('{{ "RhodiumLibre-Regular.woff" | asset_url }}') format('woff'),
+        url('{{ "RhodiumLibre-Regular.ttf" | asset_url }}') format('truetype'),
+        url('{{ "RhodiumLibre-Regular.svg#RhodiumLibre-Regular" | asset_url }}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-size: 16px;
+    line-height: 24px;
+    background: $color-white;
+}
+
+// Heading 
+//-------------------------------------
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Righteous', cursive;
+    font-weight: normal;
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+    
+h1{
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h2{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h3{
+   font-size: 16px;
+   line-height: 24px; 
+}
+
+h4, h5, h6{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.heading-uppercase{
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+h1.heading-uppercase{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h2.heading-uppercase{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.heading-uppercase-small{
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+// Typograph
+// ----------------------------------------------
+
+p{
+    font-family: 'Rhodium Libre', serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.crossed-text{
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: line-through;
+    color: $color-light-orange;
+}
+
+.mini-text{
+    font-size: 12px;
+    line-height: 16px;  
+}
+
+.mini-text-uppercase{
+    font-size: 12px;
+    line-height: 24px; 
+    text-transform: uppercase;
+}
+
+
+
+// Icons 
+//-------------------------------------
+
+
+.icon{
+    width: auto;
+    height: 24px;    
+}
+
+
+// Buttons 
+//-------------------------------------
+
+button,
+.btn{
+    font-family: 'Righteous', cursive;
+    height: 45px;
+    color: $color-light-orange;
+    background: $color-very-dark-magenta;
+    padding: 5px 8px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border: 0;
+    border-radius: 0;
+
+    &:focus,
+    &:hover,
+    &:active {
+        background: $color-light-orange;
+        color: $color-very-dark-magenta;
+    }
+}
+
+.btn-small {
+    height: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.btn-large {
+    height: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.btn-pink:not([disabled]),
+.btn-pink {
+    background-color: $color-light-orange;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-very-dark-magenta;
+    }
+}
+
+.btn-ghost:not([disabled]),
+.btn-ghost {
+    background-color: transparent;
+    outline: 1px solid $color-white;
+    outline-offset: -1px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-very-dark-magenta;
+        outline-offset: -4px;
+        outline-width: 4px;
+    }
+}
+
+.btn-ghost-black:not([disabled]),
+.btn-ghost-black {
+    color: $color-very-dark-magenta;
+    outline-color: $color-very-dark-magenta;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-very-dark-magenta;
+        outline-color: $color-very-dark-magenta;
+        background-color: transparent;
+    }
+}
