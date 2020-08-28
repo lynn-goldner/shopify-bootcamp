@@ -6,7 +6,12 @@ $color-very-dark-magenta: #30172B;
 $color-white: #fff;
 
 
-    
+// Backgrounds
+$color-body: {{ settings.color_body_bg }};
+
+// Header
+$header-mobile-hight: 81px;
+
 // Fonts
 //-------------------------------------
 
@@ -34,16 +39,15 @@ $color-white: #fff;
     font-style: normal;
 }
 
-body{
+body {
     font-size: 16px;
     line-height: 24px;
-    background: $color-white;
 }
 
 // Heading 
 //-------------------------------------
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Righteous', cursive;
     font-weight: normal;
     margin: 0 0 16px 0;
@@ -55,27 +59,27 @@ h1{
     line-height: 40px;
 }
 
-h2{
+h2 {
     font-size: 24px;
     line-height: 32px;
 }
 
-h3{
+h3 {
    font-size: 16px;
    line-height: 24px; 
 }
 
-h4, h5, h6{
+h4, h5, h6 {
     font-size: 16px;
     line-height: 16px;
 }
 
-.heading-uppercase{
+.heading-uppercase {
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
-h1.heading-uppercase{
+h1.heading-uppercase {
     font-size: 24px;
     line-height: 32px;
 }
@@ -85,7 +89,7 @@ h2.heading-uppercase{
     line-height: 24px;
 }
 
-.heading-uppercase-small{
+.heading-uppercase-small {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.1em;
@@ -95,26 +99,26 @@ h2.heading-uppercase{
 // Typograph
 // ----------------------------------------------
 
-p{
+p {
     font-family: 'Rhodium Libre', serif;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 16px;
 }
 
-.crossed-text{
+.crossed-text {
     font-size: 16px;
     line-height: 24px;
     text-decoration-line: line-through;
     color: $color-light-orange;
 }
 
-.mini-text{
+.mini-text {
     font-size: 12px;
     line-height: 16px;  
 }
 
-.mini-text-uppercase{
+.mini-text-uppercase {
     font-size: 12px;
     line-height: 24px; 
     text-transform: uppercase;
@@ -126,7 +130,7 @@ p{
 //-------------------------------------
 
 
-.icon{
+.icon {
     width: auto;
     height: 24px;    
 }
@@ -136,74 +140,117 @@ p{
 //-------------------------------------
 
 button,
-.btn{
+.btn,
+.btn:not([disabled]) {
     font-family: 'Righteous', cursive;
     height: 45px;
     color: $color-light-orange;
     background: $color-very-dark-magenta;
-    padding: 5px 8px;
+    padding: 12px 20px;
     line-height: 24px;
     text-transform: uppercase;
     font-weight: normal;
     border: 0;
     border-radius: 0;
+    font-size: 24px;
+    letter-spacing: 0.02em;
 
     &:focus,
     &:hover,
-    &:active {
+    &:active
+    {
         background: $color-light-orange;
         color: $color-very-dark-magenta;
     }
 }
 
-.btn-small {
-    height: 40px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-.btn-large {
-    height: 56px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
-.btn-pink:not([disabled]),
-.btn-pink {
+.btn-light-orange:not([disabled]),
+.btn-light-orange {
     background-color: $color-light-orange;
-
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: $color-very-dark-magenta;
-    }
-}
-
-.btn-ghost:not([disabled]),
-.btn-ghost {
-    background-color: transparent;
-    outline: 1px solid $color-white;
-    outline-offset: -1px;
-
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: $color-very-dark-magenta;
-        outline-offset: -4px;
-        outline-width: 4px;
-    }
-}
-
-.btn-ghost-black:not([disabled]),
-.btn-ghost-black {
     color: $color-very-dark-magenta;
-    outline-color: $color-very-dark-magenta;
 
     &:hover,
     &:active,
     &:focus {
-        color: $color-very-dark-magenta;
-        outline-color: $color-very-dark-magenta;
-        background-color: transparent;
+        background: $color-very-dark-magenta;
+        color: $color-light-orange;
     }
 }
+
+// Badge
+// --------------------------------
+
+.badge {
+    background: $color-light-orange;
+    border-radius: 5px;
+    color: $color-very-dark-magenta;
+    padding: 4px 5px;
+    @extend .mini-text-uppercase;
+}
+
+// Minicart
+// -----------------------------------------------------------
+
+.minicart-trigger {
+
+    .badge {
+        line-height: 16px;
+        padding: 4px 5px;
+        min-width: 25px;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+// Header
+// -----------------------------------------------------------
+
+.announcement-bar {
+    background: linear-gradient(90deg, rgba(120,246,255,1) 0%, rgba(120,96,255,1) 39%, rgba(255,96,208,1) 70%,rgba(255,217,90,1) 100%);
+    height: 15px;
+    position: absolute; 
+    width: 100%
+}
+    
+    
+.site-header {
+    height: $header-mobile-hight;
+    background-color: $color-very-dark-magenta;
+}
+
+.site-header__logo{
+    top: 11px;
+    position: relative;
+}
+
+.site-header__logo-image {
+
+    img {
+        height: 64px;
+        width: 100%;
+    }
+}
+
+
+.site-header__icon {
+    padding: 0;
+    height: 16px;
+    width: 16px;
+
+    &.site-header__menu {
+        margin-left: 20px;
+    }
+
+    &.site-header__cart {
+        margin-left: 15px;
+    }
+}
+
+// Footer
+// -----------------------------------------------------------
+
+
+
+
+
+

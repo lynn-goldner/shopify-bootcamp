@@ -20,9 +20,6 @@
   {% if section.settings.message %}
     {% if section.settings.home_page_only == false or request.page_type == 'index' %}
       <style>
-        .announcement-bar {
-          background-color: {{ section.settings.color_bg }};
-        }
 
         .announcement-bar__link:hover {
           {% assign brightness = section.settings.color_bg | color_brightness %}
