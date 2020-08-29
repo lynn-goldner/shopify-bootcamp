@@ -4,7 +4,7 @@
 $color-light-orange: #FFCD66;
 $color-very-dark-magenta: #30172B;
 $color-white: #fff;
-
+$colorful: linear-gradient(90deg, rgba(120,246,255,1) 0%, rgba(120,96,255,1) 39%, rgba(255,96,208,1) 70%,rgba(255,217,90,1) 100%);
 
 // Backgrounds
 $color-body: {{ settings.color_body_bg }};
@@ -249,6 +249,54 @@ button,
 // Footer
 // -----------------------------------------------------------
 
+.site-footer{
+    margin-top: 0px;
+}
+    
+.site-footer__item-inner--logo_img {
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.site-footer__hr{
+    background: $colorful;
+    height: 15px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.site-footer__item-inner--link_list {
+    margin: 0 auto 45px 20px; 
+}
+
+.site-footer__linklist-item a{
+    font-family: Righteous;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $color-light-orange; 
+}
+
+.site-footer__linklist-sub-item a{
+    font-size: 16px;
+    line-height: 20px;
+    color:$color-white;    
+}
+
+.site-footer__linklist-sub{
+    margin-left: 20px;    
+}
+
+
+// Bar colorful
+// ----------------------------------------------------------
+
+.colorful-hr{
+    background: $colorful;
+    height: 15px;
+    width: 100%;
+    margin: 0;
+}
 
 
 

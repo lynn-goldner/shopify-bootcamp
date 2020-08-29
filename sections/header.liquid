@@ -21,6 +21,7 @@
     {% if section.settings.home_page_only == false or request.page_type == 'index' %}
       <style>
 
+
         .announcement-bar__link:hover {
           {% assign brightness = section.settings.color_bg | color_brightness %}
 
@@ -512,7 +513,7 @@
         "zh-CN": "显示公告",
         "zh-TW": "顯示公告"
       },
-      "default": false
+      "default": true
     },
     {
       "type": "checkbox",
@@ -537,7 +538,7 @@
         "zh-CN": "仅主页",
         "zh-TW": "僅限首頁"
       },
-      "default": true
+      "default": false
     },
     {
       "type": "text",
@@ -629,7 +630,7 @@
     },
     {
       "type": "color",
-      "id": "color_bg",
+      "id": "color_bar",
       "label": {
         "da": "Bjælke",
         "de": "Zeile",
@@ -650,7 +651,7 @@
         "zh-CN": "栏",
         "zh-TW": "橫條"
       },
-      "default": "#3a3a3a"
+      "default": "#000000"
     },
     {
       "type": "color",
