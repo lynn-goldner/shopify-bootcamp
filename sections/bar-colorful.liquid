@@ -1,0 +1,98 @@
+<style>
+
+  .site-collection {
+    color: {{ section.settings.color_collection_text }};
+    background-color: {{ section.settings.color_collection_bg }};
+  }
+
+  .colorful-hr{
+    background-color: linear-gradient(90deg, rgba(120,246,255,1) 0%, rgba(120,96,255,1) 39%, rgba(255,96,208,1) 70%,rgba(255,217,90,1) 100%) ;
+}
+
+</style>
+
+<hr class="colorful-hr">
+
+
+{% schema %}
+{
+  "name": {
+    "en": "Colorful bar",
+    "pt-BR": "Barra colorida"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": {
+        "da": "Farve",
+        "de": "Farbe",
+        "en": "Color",
+        "es": "Color",
+        "fi": "Väri",
+        "fr": "Couleur",
+        "hi": "रंग",
+        "it": "Colore",
+        "ja": "色",
+        "ko": "색상",
+        "nb": "Farge",
+        "nl": "Kleur",
+        "pt-BR": "Cor",
+        "pt-PT": "Cor",
+        "sv": "Färg",
+        "th": "สี",
+        "zh-CN": "颜色",
+        "zh-TW": "顏色"
+      }
+    },
+    {
+      "type": "color",
+      "id": "first_color",
+      "label": {
+        "en": "First Color",
+        "pt-BR": "Primeira Cor"
+      },
+      "default": "#30172B"
+    },
+        {
+      "type": "color",
+      "id": "second_color",
+      "label": {
+        "en": "Second Color",
+        "pt-BR": "Segunda Cor"
+      },
+      "default": "#30172B"
+    },
+        {
+      "type": "color",
+      "id": "third_color",
+      "label": {
+        "en": "Third Color",
+        "pt-BR": "Terceira Cor"
+      },
+      "default": "#30172B"
+    },
+        {
+      "type": "color",
+      "id": "fourth_color",
+      "label": {
+        "en": "Fourth Color",
+        "pt-BR": "Quarta Cor"
+      },
+      "default": "#30172B"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Colorful bar",
+        "pt-BR": "Barra colorida"
+      },
+      "category": {
+        "en": "Layout",
+        "pt-BR": "Layout"
+      }
+    }
+  ]
+}
+{% endschema %}

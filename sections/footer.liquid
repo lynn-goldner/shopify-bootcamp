@@ -227,9 +227,11 @@
                           {% if link.current %} aria-current="page"{% endif %}
                         >
                           {{ link.title | escape }}
-                          {% for sub_link in link.links %}
-                            <ul class="site-footer__linklist, site-footer__linklist-sub
+
+                          <ul class="site-footer__linklist, site-footer__linklist-sub
                               {% if inline_list %}list--inline{% endif %}">
+                          {% for sub_link in link.links %}
+                            
                               <li class="site-footer__linklist-sub-item">
                                 <a href="{{ sub_link.url }}"
                                   {% if sub_link.current %} aria-current="page"{% endif %}
@@ -237,8 +239,9 @@
                                 {{ sub_link.title | escape}}
                                 </a>
                               </li>
-                            </ul>
+                            
                           {% endfor %}
+                          </ul>
                         </a>
                       </li>
                     {%- endfor -%}
